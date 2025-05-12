@@ -1,0 +1,19 @@
+
+---
+title: 'Test report'
+format: 
+  html:
+    embed-resources: true
+---
+
+Current wd: `{r} getwd()`
+
+```{r}
+library(ggplot2)
+
+mtcars |> 
+  ggplot(aes(mpg,
+wt)) +
+  geom_point()
+
+```
